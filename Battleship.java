@@ -2,6 +2,8 @@ package units;
 
 import java.util.ArrayList;
 import datas.Resources;
+import datas.Stats;
+import datas.Position;
 
 public class Battleship extends Naval{
 	private static final int MAX_HEALTH_POINTS = 100;
