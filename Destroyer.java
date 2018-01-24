@@ -24,7 +24,7 @@ public class Destroyer extends Naval {
 	
 	
 	public Destroyer(Position position, int faction) {
-		this(new Stats(MAX_HEALTH_POINTS, ATTACK, DEFENSE), position, faction, MOVEMENT, RANGE, new Ressources(MONEY_UPKEEP, FOOD_UPKEEPER, OIL_UPKEEPER, ELECTRICITY_UPKEEPER));
+		this(new Stats(MAX_HEALTH_POINTS, ATTACK, DEFENSE), position, faction, MOVEMENT, RANGE, new Ressources(MONEY_UPKEEP, FOOD_UPKEEP, OIL_UPKEEP, ELECTRICITY_UPKEEP));
 	}
 	
 }
