@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import datas.Resources;
 
 public class Battleship extends Naval{
-	public static final int MAX_HEALTH_POINTS = 100;
-	public static final float MOVEMENT = 3;
-	public static final int RANGE = 3;
-	public static final int ATTACK = 10;
-	public static final int DEFENSE = 6;
+	private static final int MAX_HEALTH_POINTS = 100;
+	private static final float MOVEMENT = 3;
+	private static final int RANGE = 3;
+	private static final int ATTACK = 10;
+	private static final int DEFENSE = 6;
 	
-	public static final int MONEY_UPKEEP = 0;
-	public static final int FOOD_UPKEEP = 0;
-	public static final int OIL_UPKEEP = 0;
-	public static final int ELECTRICTY_UPKEEP = 0;
+	private static final int MONEY_UPKEEP = 0;
+	private static final int FOOD_UPKEEP = 0;
+	private static final int OIL_UPKEEP = 0;
+	private static final int ELECTRICTY_UPKEEP = 0;
 	
 	public Battleship(Stats stats, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<String> crossable) {
 		super(stats, position, faction, movement, range, cost, upkeep, crossable);
