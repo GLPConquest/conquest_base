@@ -5,7 +5,7 @@ public abstract class Naval extends Unit {
 
 	private ArrayList<String> crossable = new ArrayList<String>();
 	
-	public Naval(int vie, Position pos, int defense, String faction, int movement, int range, Cost cost, Cost upkeep) {
+	public Naval(int vie, Position pos, int defense, String faction, float movement, int range, Cost cost, Cost upkeep) {
 		setDefinedCrossable();
 		super(vie, pos, defense, faction, movement, range, cost, upkeep, getCrossable());
 	}
