@@ -1,26 +1,8 @@
 
 public abstract class Unit {
-	protected int vie;
-	protected Position pos;
-	protected final static int attaque = 10;
-	protected int defense;
-	protected String faction;
-	protected int movement;
-	protected int range;
-	protected Cost cost;
-	protected Cost upkeep;
-	protected String[] way;
 	
-	public Unit(int vie, Position pos, int defense, String faction, int movement, int range, Cost cost, Cost upkeep, String[] way) {
-		setVie(vie);
-		setPos(pos);
-		setDefense(defense);
-		setFaction(faction);
-		setMovement(movement);
-		setRange(range);
-		setCost(cost);
-		setUpkeep(upkeep);
-		setWay(way);
+	public Unit() {
+		
 	}
 	
 	public Unit() {
