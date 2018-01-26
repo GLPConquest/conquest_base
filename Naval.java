@@ -20,12 +20,9 @@ public abstract class Naval extends Unit {
 	/*
 	* Custom constructor
 	*/
-	public Naval(int vie, Position pos, int defense, String faction, float movement, int range, Cost cost, Cost upkeep, String[] crossableTab) {
-		ArrayList<String> crossables = getCrossable();
-		for (i=0 ; i<crossableTab.length ; i++){
-			addCrossable(crossableTab[i]);
-		}
-		super(vie, pos, defense, faction, movement, range, cost, upkeep, getCrossable());
+	public Naval(Stats stats, Position position, int faction, float movement, int range, Resources upkeep, AraryList<String> crossables) {
+		setCrossable(crossables);
+		super(stats, position, faction, movement, range, upkeep, getCrossable());
 	}
 	
 	/*
@@ -44,10 +41,10 @@ public abstract class Naval extends Unit {
 	}
 	
 	/*
-	* A way to add new rules for ship
+	* Crossable's setter
 	*/
-	public void addCrossable(String string){
-		this.crossable=this.crossable.add(string);
+	public void setCrossable(ArrayList<String> crossables){
+		this.crossable=crossables;
 	}
 	
 	/*
