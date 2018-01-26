@@ -33,7 +33,7 @@ public class Destroyer extends Naval {
 	/*
 	* Custom constructor
 	*/
-	public Destroyer(Stats stats, int vie, Position position, int faction, float movement, int range, Resources upkeep) {
+	public Destroyer(Stats stats, Position position, int faction, float movement, int range, Resources upkeep) {
 		super(stats, position, faction, movement, range, cost, upkeep);
 	}
 	
