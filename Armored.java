@@ -12,19 +12,22 @@ import datas.Position;
 */
 public class Armored extends Earths{
 	
-	private String attribute = "Armored";
-	
-	
-	public Armored(Stats stats, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<String> way) {
-		super(stats, position, faction, movement, range, upkeep, crossable, getAttribute());
+	/*
+	* Custom Constructor 
+	*/
+	public Armored(Stats stats, float maxHealth, float currentHealth, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<String> way) {
+		super(stats, maxHealth, currentHealth, position, faction, movement, range, upkeep, crossable, getAttribute());
 	}
 	
-	
+	/*
+	* Default constructor
+	*/
 	public Armored() {
-		this(getStats(), getPosition(), getFaction(), getMovement(), getRange(), getUpkeep(), getCrossable(), getAttribute());
+		setDefaultAttribute();
+		this(getStats(), getMaxHealth(), getCurrentHealth(), getPosition(), getFaction(), getMovement(), getRange(), getUpkeep(), getCrossable(), getAttribute());
 	} 
 	
-	public String getAttribute(){
-		return this.attribute;
+	public setDefaultAttribute(){
+		this.attribute = "Armored";
 	}
 }
