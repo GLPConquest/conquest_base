@@ -22,13 +22,15 @@ public abstract class Unit {
 	private int range;
 	/*...an upkeep cost...*/
 	private Resources upkeep;
-	/*... and they can go through some different type of square*/
+	/*... they can go through some different type of square*/
 	private ArrayList<String> crossable;
+	/*and they have a special attribute in fight*/
+	private String attribute;
 	
 	/*
 	* Custom Constructor 
 	*/
-	public Unit(Stats stats, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<String> crossable) {
+	public Unit(Stats stats, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<String> crossable, String attribute) {
 		setStats(stats);
 		setPosition(position);
 		setFaction(faction);
@@ -36,13 +38,14 @@ public abstract class Unit {
 		setRange(range);
 		setUpkeep(upkeep);
 		setCrossable(crossable);
+		setAttribute(attribute);
 	}
 	
 	/*
 	* Default constructor
 	*/
 	public Unit() {
-		this(getStats(),getPosition(),getFaction(),getFaction(),getMovement(),getRange(),getUpkeep(),getCrossable());
+		this(getStats(),getPosition(),getFaction(),getFaction(),getMovement(),getRange(),getUpkeep(),getCrossable(), getAttribute());
 	}
 	
 	/*Stats getter*/
@@ -113,5 +116,15 @@ public abstract class Unit {
 	/*Crossable setter*/
 	public void setCrossable(ArrayList<String> crossable) {
 		this.crossable = crossable;
-	}	
+	}
+	
+	/*Attribute getter*/
+	public String getAttribute(){
+		return this.attribute;
+	}
+	
+	/*Attribute setter*/
+	public void setAttribute(String attribute){
+		this.attribute = attribute;
+	}
 }
