@@ -27,14 +27,14 @@ public abstract class Unit {
 	/*...an upkeep cost...*/
 	private Resources upkeep;
 	/*... they can go through some different type of square*/
-	private ArrayList<String> crossable;
+	private ArrayList<int> crossable;
 	/*and they have a special attribute in fight*/
 	private String attribute;
 	
 	/*
 	* Custom Constructor 
 	*/
-	public Unit(Stats stats, float maxHealth, float currentHealth, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<String> crossable, String attribute) {
+	public Unit(Stats stats, float maxHealth, float currentHealth, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<int> crossable, String attribute) {
 		setStats(stats);
 		setMaxHealth(maxHealth);
 		setCurrentHealth(currentHealth);
@@ -134,12 +134,12 @@ public abstract class Unit {
 	}
 
 	/*Crossable getter*/
-	public ArrayList<String> getCrossable() {
+	public ArrayList<int> getCrossable() {
 		return this.crossable;
 	}
 
 	/*Crossable setter*/
-	public void setCrossable(ArrayList<String> crossable) {
+	public void setCrossable(ArrayList<int> crossable) {
 		this.crossable = crossable;
 	}
 	
