@@ -24,10 +24,23 @@ public class Armored extends Earths{
 	*/
 	public Armored() {
 		setDefaultAttribute();
+		setDefaultCrossable();
 		this(getStats(), getMaxHealth(), getCurrentHealth(), getPosition(), getFaction(), getMovement(), getRange(), getUpkeep(), getCrossable(), getAttribute());
 	} 
 	
 	public setDefaultAttribute(){
 		this.attribute = "Armored";
+	}
+	
+	public setDefaultCrossable(){
+		this.crossable = this.crossable.add(1);
+		this.crossable = this.crossable.add(2);
+		this.crossable = this.crossable.add(3);
+		this.crossable = this.crossable.add(4);
+		this.crossable = this.crossable.add(5);
+		this.crossable = this.crossable.add(6);
+		this.crossable = this.crossable.add(7);
+		this.crossable = this.crossable.add(8);
+		this.crossable = this.crossable.add(9);
 	}
 }
