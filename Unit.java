@@ -12,6 +12,10 @@ import datas.Position;
 public abstract class Unit {
 	/*Units have stats...*/
 	private Stats stats;
+	/*...max health...*/
+	private float maxHealth;
+	/*...current health...*/
+	private float currentHealth
 	/*...a position...*/
 	private Position position;
 	/*...a faction...*/
@@ -30,8 +34,10 @@ public abstract class Unit {
 	/*
 	* Custom Constructor 
 	*/
-	public Unit(Stats stats, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<String> crossable, String attribute) {
+	public Unit(Stats stats, float maxHealth, float currentHealth, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<String> crossable, String attribute) {
 		setStats(stats);
+		setMaxHealth(maxHealth);
+		setCurrentHealth(currentHealth);
 		setPosition(position);
 		setFaction(faction);
 		setMovement(movement);
@@ -45,7 +51,7 @@ public abstract class Unit {
 	* Default constructor
 	*/
 	public Unit() {
-		this(getStats(),getPosition(),getFaction(),getFaction(),getMovement(),getRange(),getUpkeep(),getCrossable(), getAttribute());
+		this(getStats(),getMaxHealth(),getCurrentHealth()getPosition(),getFaction(),getFaction(),getMovement(),getRange(),getUpkeep(),getCrossable(), getAttribute());
 	}
 	
 	/*Stats getter*/
@@ -58,6 +64,25 @@ public abstract class Unit {
 		this.stats = stats;
 	}
 
+	/*MaxHealth getter*/
+	public float getMaxHealth() {
+		return this.maxHealth;
+	}
+
+	/*MaxHealth setter*/
+	public void setMaxHealth(float maxHealth) {
+		this.maxHealth = maxHealth;
+	}
+	
+	/*CurrentHealth getter*/
+	public float getCurrentHealth() {
+		return this.currentHealth;
+	}
+
+	/*CurrentHealth setter*/
+	public void setCurrentHealth(float currentHealth) {
+		this.currentHealth = currentHealth;
+	}
 	/*Position getter*/
 	public Position getPosition() {
 		return this.position;
