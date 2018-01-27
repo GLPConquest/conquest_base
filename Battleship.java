@@ -33,14 +33,14 @@ public class Battleship extends Naval{
 	/*
 	* Custom constructor
 	*/
-	public Battleship(Stats stats, Position position, int faction, float movement, int range, Resources upkeep) {
-		super(stats, position, faction, movement, range, cost, upkeep);
+	public Battleship(Stats stats, float maxHealth, float currentHealth, Position position, int faction, float movement, int range, Resources upkeep) {
+		super(stats, maxHealth, maxHealth, position, faction, movement, range, cost, upkeep);
 	}
 	
 	/*
 	* Default constructor
 	*/
 	public Battleship(Position position, int faction) {
-		this(new Stats(MAX_HEALTH_POINT,ATTACK,DEFENSE),position,faction,MOVEMENT,RANGE,new Resources(MONEY_UPKEEP,FOOD_UPKEEP,OIL_UPKEEP,ELECTRICTY_UPKEEP));
+		this(new Stats(MAX_HEALTH_POINT,ATTACK,DEFENSE), (float)MAX_HEALT_POINTS, (float)MAX_HEALT_POINTS, position, faction, MOVEMENT, RANGE, new Resources(MONEY_UPKEEP,FOOD_UPKEEP,OIL_UPKEEP,ELECTRICTY_UPKEEP));
 	}
 }
