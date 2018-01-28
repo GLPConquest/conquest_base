@@ -13,44 +13,26 @@ import datas.Position;
 public abstract class Naval extends Unit {
 	
 	/*
-	* The environments the naval units can go through
-	*/
-	private ArrayList<String> crossable = new ArrayList<String>();
-	
-	/*
 	* Custom constructor
 	*/
-	public Naval(Stats stats, Position position, int faction, float movement, int range, Resources upkeep, AraryList<String> crossables) {
-		setCrossable(crossables);
-		super(stats, position, faction, movement, range, upkeep, getCrossable());
+	public Naval(Stats stats, float maxHealth, float currentHealth, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<int> crossable) {
+		super(stats, maxHealth, currentHealth, position, faction, movement, range, upkeep, crossable, getAttribute());
 	}
 	
 	/*
 	* Default constructor
 	*/
 	public Naval() {
-		setDefinedCrossable();
-		this(100,new Position(),0,"neutral",0,0,new Cost(),new Cost(), getCrossable());
+		setDefaultAttribute();
+		setDefaultCrossable();
+		this(getStats(), getMaxHealth(), getCurrentHealth(), getPosition(), getFaction(), getMovement(), getRange(), getUpkeep(), getCrossable(), getAttribute());
+	} 
+	
+	public setDefaultAttribute(){
+		this.attribute = "Naval";
 	}
 	
-	/*
-	* Default settings for crossable path : ship can only travel through water
-	*/
-	public void setDefinedCrossable(){
-		this.crossable=this.crossable.add("water");
-	}
-	
-	/*
-	* Crossable's setter
-	*/
-	public void setCrossable(ArrayList<String> crossables){
-		this.crossable=crossables;
-	}
-	
-	/*
-	* Crossable's getter
-	*/
-	public ArrayList<String> getCrossable(){
-		return this.crossable;
+	public setDefaultCrossable(){
+		this.crossable = this.crossable.add(0);
 	}
 }
