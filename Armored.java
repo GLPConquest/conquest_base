@@ -10,7 +10,7 @@ import datas.Position;
 * These units are strong against the infantry units and weak against bots units
 * Moreover these units are slower than the other
 */
-public class Armored extends Earths{
+public class Armored extends Unit{
 	
 	/*
 	* Custom Constructor 
