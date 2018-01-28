@@ -18,7 +18,7 @@ public class Tank extends Armored{
 	*/
 	private static final int MAX_HEALTH_POINTS = 100;
 	private static final float MOVEMENT = 2.5;
-	private static final int RANGE = 3;
+	private static final int RANGE = 1;
 	private static final int ATTACK = 10;
 	private static final int DEFENSE = 8;
 	
