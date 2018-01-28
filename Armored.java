@@ -36,7 +36,6 @@ public class Armored extends Earths{
 		this.crossable = this.crossable.add(1);
 		this.crossable = this.crossable.add(2);
 		this.crossable = this.crossable.add(3);
-		this.crossable = this.crossable.add(4);
 		this.crossable = this.crossable.add(5);
 		this.crossable = this.crossable.add(6);
 		this.crossable = this.crossable.add(7);
