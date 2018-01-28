@@ -10,7 +10,7 @@ import datas.Position;
 * The environment these units can go through is defined here
 * They arestrong against Armored units but weak to Infantry
 */
-public class Bots extends Earths {
+public class Bots extends Unit {
 	
 	/*
 	* Custom constructor
