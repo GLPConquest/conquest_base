@@ -15,7 +15,7 @@ public class Armored extends Unit{
 	/*
 	* Custom Constructor 
 	*/
-	public Armored(Stats stats, float maxHealth, float currentHealth, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<String> way) {
+	public Armored(Stats stats, float maxHealth, float currentHealth, Position position, int faction, float movement, int range, Resources upkeep, ArrayList<int> crossable) {
 		super(stats, maxHealth, currentHealth, position, faction, movement, range, upkeep, crossable, getAttribute());
 	}
 	
