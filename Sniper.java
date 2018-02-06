@@ -18,8 +18,8 @@ public class Sniper extends Infantry{
 	private static final int MAX_HEALTH_POINTS = 100;
 	private static final float MOVEMENT = 3;
 	private static final int RANGE = 3;
-	private static final int ATTACK = 7;
-	private static final int DEFENSE = 2;
+	private static final int ATTACK = 95;
+	private static final int DEFENSE = 25;
 	
 	/*
 	* Cost definition
