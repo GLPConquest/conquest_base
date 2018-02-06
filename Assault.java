@@ -18,8 +18,8 @@ public class Assault extends Infantry{
 	private static final int MAX_HEALTH_POINTS = 100;
 	private static final float MOVEMENT = 3;
 	private static final int RANGE = 1;
-	private static final int ATTACK = 6;
-	private static final int DEFENSE = 4;
+	private static final int ATTACK = 85;
+	private static final int DEFENSE = 45;
 	
 	/*
 	* Cost definition
