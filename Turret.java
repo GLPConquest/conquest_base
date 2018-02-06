@@ -19,8 +19,8 @@ public class Turret extends Armored{
 	private static final int MAX_HEALTH_POINTS = 100;
 	private static final float MOVEMENT = 2.5;
 	private static final int RANGE = 3;
-	private static final int ATTACK = 12;
-	private static final int DEFENSE = 6;
+	private static final int ATTACK = 105;
+	private static final int DEFENSE = 45;
 	
 	/*
 	* Cost definition
