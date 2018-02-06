@@ -19,8 +19,8 @@ public class Bfgninethousand extends Bots{
 	private static final int MAX_HEALTH_POINTS = 100;
 	private static final float MOVEMENT = 3;
 	private static final int RANGE = 3;
-	private static final int ATTACK = 10;
-	private static final int DEFENSE = 4;
+	private static final int ATTACK = 100;
+	private static final int DEFENSE = 35;
 	
 	/*
 	* Cost definition
