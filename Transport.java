@@ -20,7 +20,7 @@ public class Transport extends Naval{
 	private static final float MOVEMENT = 4;
 	private static final int RANGE = 0;
 	private static final int ATTACK = 0;
-	private static final int DEFENSE = 5;
+	private static final int DEFENSE = 70;
 	
 	/*
 	* Cost definition
