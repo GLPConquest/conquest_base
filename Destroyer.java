@@ -19,8 +19,8 @@ public class Destroyer extends Naval {
 	private static final MAX_HEALTH_POINTS = 100;
 	private static final MOVEMENT = 3;
 	private static final RANGE = 3;
-	private static final ATTACK = 10;
-	private static final DEFENSE = 4;
+	private static final ATTACK = 100;
+	private static final DEFENSE = 75;
 	
 	/*
 	* Cost definition
